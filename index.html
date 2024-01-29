@@ -1,0 +1,586 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" media="screen and (max-width:1200px)" href="css/tab.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>MyPortfolio</title>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="left">
+                <img src="img/photo.png" alt="img">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="mid slide-in">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <!-- <li><a href="#skills">Skills</a></li> -->
+                    <li><a href="#internship">Internship</a></li>
+                    <li><a href="#" onclick="openProjectSlider()">Project</a></li>
+
+
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn" id="contactbtn"> <a href="#contact-slider"> Contact</a></button>
+            </div>
+            <div class="bars"> <i class="fa-solid fa-bars"></i></div>
+        </nav>
+
+    </header>
+
+    <!-- Contact  -->
+
+    <div id="contact-slider" class="contact">
+        <div class="cont1" id="cont1">
+            <!-- Content for Box 1 -->
+            <h2>Contact Me</h2>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i><a>A/P Islampur,Tal:Walwa, Dist:Sangli</a></li>
+                <li><i class="fa-regular fa-envelope"></i><a>pawarsnehal097@gmail.com</a></li>
+                <li><i class="fa-solid fa-phone"></i><a>7385684779</a></li>
+            </ul>
+            <!-- <img src="img/proj1.jpg" alt=""> -->
+            <!-- <p><i class="fa-solid fa-location-dot"></i><i> A/P Islampur, Tal: Walwa, Dist:Sangli</i><br>
+                  <br> <i class="fa-regular fa-envelope"></i><i> pawarsnehal097@gmail.com</i><br>
+                  <br><i class="fa-solid fa-phone"></i> <i> 7385684779</i>
+              </p> -->
+
+        </div>
+    </div>
+
+
+    <!-- Projects -->
+
+    <section id="projectSlider" class="slider">
+        <div class="proj1" id="proj1">
+
+            <!-- Content for Box 1 -->
+            <h2>Vertical farming</h2>
+            <div class="info1">
+                <img src="img/proj1.jpg" alt="">
+                <div class="para1">
+                    <p><i> I have completed <b style="color:rgb(138, 7, 214)">"Vertical Farming"</b> as my final
+                            project.
+                            This
+                            is automated
+                            hydroponic cattle feeding
+                            system which is focus on avoiding use of of soil and fertilizer. Hydroponic vertical farming
+                            uses
+                            75%
+                            less water than traditional farming within smaller place. We have made this automated and
+                            application
+                            based system for farmers
+                            so that they can use very easily.</i>
+                    </p>
+                    <button title="View More "> <a href="doc/Vertical farming Final (5).pdf"> <b> View
+                                More</b></a></button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="proj2" id="proj2">
+            <!-- Content for Box 2 -->
+            <h2>Wonderful Days</h2>
+            <div class="info2">
+                <img src="img/proj2.png" alt="">
+                <div class="para2">
+                    <p><i> I have completed Project on creating web page for the <b style="color:rgb(138, 7, 214)">
+                                "Wonderful
+                                Days
+                                Event"</b> (frontend and backend) during
+                            5 months internship at Blueplanet Info solutions, India Pvt Ltd Pune. Which will give
+                            information
+                            about
+                            innovative ideas about business also help in educational and social field by organizing
+                            different
+                            events.</i></p>
+                            <button title="View More "> <a href="doc/Snehal_Pawar_Project_Report.pdf"> <b> View
+                                More</b></a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="arrow left" onclick="prevBox()">&#8249;</div>
+        <div class="arrow right" onclick="nextBox()">&#8250;</div>
+    </section>
+
+
+    <!-- Main Part  -->
+
+    <main>
+
+        <section id="home">
+
+            <div class="box">
+                <div class="bx">Hello,
+                    <div class="parag">My name is,</div>
+                    <div><span class="purple">Snehal Pawar</span></div>
+                    <div class="para">
+                        <p>Full Stack Web Developer | PHP Developer</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/snehal-pawar-a442841b7/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/snehal_pawar_118/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/snehal.pawar.10690" class="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                    <button class="btn1"> <a href="doc/Snehal_Pawar_Resume.pdf"> Download Resume</a> <i
+                            class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="img/brphoto.png" alt="img">
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="box">
+                <p>I am Snehal Prakash Pawar from Islampur. I have completed my SSC from Islampur Highschool,
+                    Islampur(85.80%), HSC from Smt. Kusumtai Rajarambapu Patil, kanya mahavidyalaya, Islampur(69.08%). I
+                    have persurd B.Tech degree in Electronics and Telecommunication and minor degree in Computer
+                    Science and Information technology from Rajarambapu Institute of Technology, Rajaramnagar(61%). I
+                    mostly like swimming, listening music, cooking and cycling. I have done first internship on IoT
+                    project using industry grade microcontroller(1 month) and second on web development in Blueplanet
+                    infotech solutions, India pvt ltd, Pune(5 months).</p>
+            </div>
+
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="row">
+                <div class="box">
+                    <img src="img/ritlogo.png" alt="img">
+                    <h3>Rajarambapu Institute of Technology, Rajaramnagar.</h3>
+                    <h3>B.Tech(2019-2023)</h3>
+                    <h5>I have completed my Btech degree in ETC and CS IT (Minor) from Rajarambapu Institute of
+                        Technology,
+                        Rajaramnagar. with 61%</h5>
+                    <button class="btn1"> <a href="img/BTech.jpg"> View Certificate</a></button>
+                </div>
+
+
+                <div class="box">
+                    <img src="img/krplogo.jpeg" alt="img">
+                    <h3>Smt. Kusumtai Rajarambapu Patil kanya Mahavidyala, Islampur.</h3>
+                    <h3>HSC(2017-2019)</h3>
+                    <h5>I have completed my HSC from Smt. Kusumtai Rajarambapu Patil kanya Mahavidyalaya, Islampur with
+                        69.08% </h5>
+                    <button class="btn1"> <a href="img/HSC.jpg"> View Certificate</a></button>
+                </div>
+
+                <div class="box">
+                    <img src="img/ihilogo3.jpeg" alt="img">
+                    <h3>Islampur Highschool and Junior college of Science, Islampur</h3>
+                    <h3>SSC (2016-2017)</h3>
+                    <h5>I have completed my SSC from Islampur Highschool, Islampur and Junior college of Science,
+                        Islampur with
+                        85.80% </h5>
+                    <button class="btn1"> <a href="img/SSC.jpg"> View Certificate</a></button>
+                </div>
+            </div>
+
+            </div>
+            </div>
+
+        </section>
+
+        <section id="internship">
+            <h2>My Internships</h2>
+            <div class="container">
+                <div class="title" onclick="toggleBox('box1')"> Internship 1</div>
+                <div class="title1" onclick="toggleBox('box2')"> Internship 2</div>
+                <!-- Add more titles as needed -->
+
+            </div>
+
+            <div class="intbox" id="box1">
+                <!-- Content for box 1 -->
+                <p>Internship 1</p>
+                <img src="img/internship1.jpeg" alt="logo1">
+                <h4>Anand-TEchno-Creations, Satara.</h4>
+                <div class="info">IoI Project Development using Industry Grade Microcontroller.</div>
+                <div class="info">larn the much more concepts from the electronics and IoT field.</div>
+                <button class="btn1"> <a href="doc/1905024_internship_report.pdf"> View More</a></button>
+            </div>
+
+            <div class="intbox" id="box2">
+                <!-- Content for box 2 -->
+                <p>Internship 2</p>
+                <img src="img/internship2.png" alt="logo2">
+                <h4>Blueplanet Infotech Solutions, India, Pvt. Ltd. Pune.</h4>
+                <div class="info">Website for "Wonderful Business Days" event</div>
+                <div class="info">Learn various concepts and technologies used in web development </div>
+                <button class="btn1"> <a href="doc/Snehal_Pawar_Internship_Report.pdf"> View More</a></button>
+            </div>
+            <!-- Add more boxes as needed -->
+        </section>
+        
+        <section class="certificates">
+            <h2>Certificates</h2>
+            <section class="slider_container">
+                <div class="container">
+                    <div class="swiper card_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="img/internship.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="img/webdevlpmnt.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="img/iot.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="img/candcpp.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="img/dbms.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="img/web.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="img/chandrayaan.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="img/vachan.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="skills">
+            <div class="inner">
+                <div class="header">
+                    <h1>My Skills</h1>
+                </div>
+                <div class="container1">
+                    <div class="skikl-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <!-- <i class="fa-brands fa-html5"></i> -->
+                                <img src="img/html.svg" alt="" class="skill-icon">
+                            </div>
+                            <h3>HTML 5</h3>
+                        </div>
+                        <p>I have knowledge about all Tags in HTML. I have worked on HTML for 6 months during Minor
+                            course as my curriculum part, and also completed 1 project during internship period .
+                        </p>
+                    </div>
+                    <div class="skikl-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <!-- <i class="fa-brands fa-css3-alt"></i> -->
+                                <img src="img/css3.svg" alt="" class="skill-icon">
+                            </div>
+                            <h3>CSS 3</h3>
+                        </div>
+                        <p>I grab the knowledge about Css during my Minor course as my curriculum part and during 6
+                            months
+                            internship, and implemented that during the internship in projects fluently. </p>
+                    </div>
+                    <div class="skikl-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <!-- <i class="fa-brands fa-js"></i> -->
+                                <img src="img/js1.svg" alt="" class="skill-icon">
+                            </div>
+                            <h3>Javascript</h3>
+                        </div>
+                        <p> I'm working at the moderate level in Javascript. I have used javascript during my curriculum
+                            in miniproject and also worked on it as backend in project duuring internship</p>
+                    </div>
+                    <div class="skikl-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <!-- <i class="fa-solid fa-code"></i> -->
+                                <!-- <i class="fa-solid fa-database"></i> -->
+                                <img src="img/sql1.svg" alt="" class="skill-icon">
+                            </div>
+                            <h3>SQL</h3>
+                        </div>
+                        <p>I grab the both theoratical and practical knowledge about SQL during 6 months of my
+                            curriculum. I can play with database by using queries.</p>
+                    </div>
+                    <div class="skikl-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="img/cpp.svg" alt="" class="skill-icon">
+                            </div>
+                            <h3>Cpp</h3>
+                        </div>
+                        <p>I have completed CPP course from syllabus on regular basis during my higher education. Also
+                            completed one certified course from Internshala</p>
+                    </div>
+                    <div class="skikl-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <!-- <i class="fa-brands fa-python"></i> -->
+                                <img src="img/python.svg" alt="" class="skill-icon">
+                            </div>
+                            <h3>Python</h3>
+                        </div>
+                        <p>I have completed Python course as my regular syllabus during my higher education,
+                            also completed 1 mini-project during same period. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer  -->
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Snehal's Portfolio</h3>
+            </div>
+            <div class="footer-Second">
+                <h4>Details</h4>
+
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/internship.html">Internship</a></li>
+                </ul>
+            </div>
+            <div class="footer-Third">
+                <h4>Contact</h4>
+                <ul>
+                    <li> <a href=""><i class="fa-solid fa-location-dot"></i> &nbsp A/P Islampur, Tal: Walwa, Dist:
+                            Sangli.</a></li>
+                    <li> <a href="tel:+917385684779"><i class="fa-solid fa-phone"></i> &nbsp +91 7385684779</a></li>
+                    <li> <a href="mailto:"> <i class="fa-regular fa-envelope"></i>&nbsp pawarsnehal097@gmail.com</a></li>
+                    <!-- <li> <a href="">Contact</a></li> -->
+                </ul>
+            </div>
+            <div class="footer-Fourth">
+                <h4>Follow Me</h4>
+                <ul>
+                    <li> <a href="https://www.linkedin.com/in/snehal-pawar-a442841b7/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li> <a href="https://www.instagram.com/snehal_pawar_118/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li> <a href="https://www.facebook.com/snehal.pawar.10690"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <!-- <li>Contact</li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; snehalportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts  -->
+
+    <!-- Contact script  -->
+
+    <script>
+
+        // Function to toggle the project slider on navbar click
+        function screen() {
+            const projectSlider = document.getElementById("contact-slider");
+            projectSlider.classList.toggle("contact-visible");
+
+            // Toggle the active box
+            // const cont1 = document.getElementById("cont1"); **
+            // const box2 = document.getElementById("proj2");
+            // currentBox = 1; // Show the first box when the slider is toggled
+            cont1.style.display = "block";
+            // box2.style.display = "none";
+            // Add an event listener to the close button to hide the contact section
+            const closeBtn = document.getElementById("close-btn");
+            closeBtn.addEventListener("click", function () {
+                projectSlider.classList.remove("contact-visible");
+            });
+        }
+
+        // Add click event to the "Project" link in the navbar
+        const contactLink = document.querySelector("nav a[href='#contact-slider']");
+        contactLink.addEventListener("click", screen);
+    </script>
+
+
+    <!-- Bar script  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var barsIcon = document.querySelector('.bars');
+            var midNav = document.querySelector('.mid');
+
+            barsIcon.addEventListener('click', function () {
+                midNav.classList.toggle('show');
+            });
+
+            // Close the navigation menu when clicking on the screen
+            document.addEventListener('click', function (event) {
+                if (!event.target.closest('.mid') && !event.target.closest('.bars')) {
+                    midNav.classList.remove('show');
+                }
+            });
+
+            // Close the navigation menu when clicking on a navigation link
+            var navLinks = document.querySelectorAll('.mid ul li a');
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    midNav.classList.remove('show');
+                });
+            });
+        });
+    </script>
+
+  <!-- Hide card   -->
+  <script>
+    function toggleBox(boxId) {
+        // Get the selected box
+        var selectedBox = document.getElementById(boxId);
+
+        // Hide all boxes except the selected one
+        var allBoxes = document.querySelectorAll('.intbox');
+        allBoxes.forEach(function (box) {
+            if (box !== selectedBox) {
+                box.style.display = 'none';
+            }
+        });
+
+        // Toggle the display of the selected box
+        selectedBox.style.display = selectedBox.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+
+    <!-- Certificate slider Script  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper(".card_slider", {
+            cssMode: true,
+            loop: true,
+            speed: 1000,
+            // autoplay: {
+            //     delay: 2000,
+            // },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+
+
+        });
+    </script>
+
+    <!-- Project Display Script  -->
+    <script>
+        let currentBox = 1;
+
+        // Function to toggle the project slider on navbar click
+        function toggleProjectSlider() {
+            const projectSlider = document.getElementById("projectSlider");
+            projectSlider.classList.toggle("slider-visible");
+
+            // Toggle the active box
+            const box1 = document.getElementById("proj1");
+            const box2 = document.getElementById("proj2");
+            currentBox = 1; // Show the first box when the slider is toggled
+            box1.style.display = "block";
+            box2.style.display = "none";
+        }
+
+        // Add click event to the "Project" link in the navbar
+        const projectLink = document.querySelector("nav a[href='#']");
+        projectLink.addEventListener("click", toggleProjectSlider);
+
+        // Function to show the previous box
+        function prevBox() {
+            const box1 = document.getElementById("proj1");
+            const box2 = document.getElementById("proj2");
+            if (currentBox === 2) {
+                box1.style.display = "block";
+                box2.style.display = "none";
+                currentBox = 1;
+            }
+
+        }
+
+        // Function to show the next box
+        function nextBox() {
+            const box1 = document.getElementById("proj1");
+            const box2 = document.getElementById("proj2");
+            if (currentBox === 1) {
+                box1.style.display = "none";
+                box2.style.display = "block";
+                currentBox = 2;
+            }
+
+        }
+
+        // Function to hide the project slider when clicking anywhere on the screen
+        function hideProjectSliderOnClick(event) {
+            const projectSlider = document.getElementById("projectSlider");
+            if (event.target !== projectLink && !projectSlider.contains(event.target)) {
+                projectSlider.classList.remove("slider-visible");
+            }
+        }
+
+        // Add click event to the document to hide the slider when clicking anywhere on the screen
+        document.addEventListener("click", hideProjectSliderOnClick);
+
+        // Add click event to the left arrow
+        const leftArrow = document.querySelector(".arrow.left");
+        leftArrow.addEventListener("click", prevBox);
+
+        // Add click event to the right arrow
+        const rightArrow = document.querySelector(".arrow.right");
+        rightArrow.addEventListener("click", nextBox);
+    </script>
+
+
+
+</body>
+
+</html>

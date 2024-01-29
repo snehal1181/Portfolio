@@ -1,0 +1,1142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: auto;
+    background-color: white;
+}
+
+@media screen and (max-width:899) {
+    body {
+        height: auto;
+    }
+}
+
+header {
+    width: 79rem;
+    height: 4.5rem;
+    background: rgb(202, 201, 201);
+}
+
+@media (min-width:1090) and (max-width:1240) {
+    header {
+        width: 99rem;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav .left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15vw;
+    height: 4.5rem;
+}
+
+nav .left h2 {
+    /* margin: 0.2rem; */
+    font-size: 2.3rem;
+
+}
+
+nav .left img {
+    width: 2.9rem;
+    height: 3.2rem;
+    margin: 0rem 0.5rem;
+    border-radius: 100px;
+}
+
+nav .mid {
+    display: flex;
+    align-items: center;
+    height: 4.3rem;
+}
+
+
+nav .mid ul {
+    display: flex;
+    padding: 0;
+}
+
+nav .mid ul li {
+    margin: 0rem 1rem;
+    list-style: none;
+}
+
+nav .mid ul li a {
+    color: rgb(129, 5, 201);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+nav .mid ul li a:hover {
+    cursor: pointer;
+    color: rgb(110, 24, 159);
+}
+
+nav .right {
+    padding: 0.7rem;
+}
+
+
+.btn {
+    border-radius: 4rem;
+    font-size: 1.4rem;
+    margin: 0.4rem 1rem;
+    padding: 0.2rem 0.5rem;
+    background: rgb(138, 7, 214);
+}
+
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: rgb(146, 28, 214);
+}
+
+.bars {
+    color: white;
+    margin: 1.5rem;
+    font-size: 1.4rem;
+    display: none;
+}
+
+
+
+
+/* Contact  */
+
+.contact {
+    position: fixed;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-visible {
+    opacity: 0.9888;
+    background-color: rgba(15, 34, 207, 0.3);
+    pointer-events: auto;
+}
+
+#cont1 {
+    display: none;
+    flex-direction: row;
+    border-radius: 7px;
+    margin: auto;
+    width: 37rem;
+    height: 18rem;
+    opacity: 99;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    /* overflow: hidden; */
+
+}
+
+
+#cont1 h2 {
+    color: rgb(138, 7, 214);
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+}
+
+
+
+
+.cont1 ul {
+    /* position: absolute; */
+    text-align: left;
+    font-size: 1rem;
+    list-style-type: none;
+    /* top: 40vh;
+    right: 25vw; */
+    width: auto;
+    /* height: 6vh; */
+}
+
+.cont1 ul li {
+    margin: 1.5rem;
+    padding: 0 1rem;
+}
+
+.cont1 ul li a {
+    padding: 0rem 0.5rem;
+    font-size: 2rem;
+}
+
+
+
+/* Project */
+.slider {
+    position: fixed;
+    top: 4.5rem;
+    /* Adjust the value to position the slider properly */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    /* Make sure the slider appears on top of other elements */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+
+.slider-visible {
+    opacity: 0.9888;
+    background-color: rgba(134, 86, 201, 0.2);
+    pointer-events: auto;
+}
+
+/* Individual box styles (Modify as per your requirement) */
+#proj1,
+#proj2 {
+    display: none;
+    border-radius: 7px;
+    margin: auto;
+    width: 45rem;
+    height: 24rem;
+    opacity: 99;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+
+#proj1 h2,
+#proj2 h2 {
+    text-align: center;
+    margin: 0.8rem;
+    font-size: 3rem;
+    color: rgb(138, 7, 214);
+}
+
+#proj1 .info1,
+#proj2 .info2 {
+    display: flex;
+    width: auto;
+    height: 15rem;
+    /* border: 1px solid red; */
+    margin: 1rem 1rem;
+}
+
+
+#proj1 img {
+    margin: rem 1rem;
+    width: 80rem;
+    height: 17rem;
+}
+
+#proj2 img {
+    margin: 0rem 1rem;
+    width: 75rem;
+    height: 17rem;
+}
+
+#proj1 .info1 .para1,
+#proj2 .info2 .para2 {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+}
+
+#proj1 .para1 p,
+#proj2 .para2 p {
+    text-align: justify;
+    color: black;
+    margin: 0rem 1rem;
+    text-align: justify;
+    /* padding: 1rem 2rem 1rem 2rem; */
+    font-size: 1.3rem;
+}
+
+
+#proj1 .info1 .para1 button {
+    background-color: rgb(138, 7, 214);
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 11rem;
+    border-radius: 7rem;
+}
+
+#proj2 .info2 .para2 button {
+    background-color: rgb(138, 7, 214);
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 10rem;
+    border-radius: 7rem;
+}
+
+#proj1 .info1 .para1 button a,
+#proj2 .info2 .para2 button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* Navigation Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 7rem;
+    color: rgb(138, 7, 214);
+    cursor: pointer;
+}
+
+.left {
+    left: 15px;
+}
+
+.right {
+    right: 15px;
+}
+
+
+
+
+
+/* Home  */
+#home {
+    display: flex;
+    width: 79rem;
+    height: 30rem;
+    justify-content: space-around;
+    align-items: center;
+    /* background: url('https://media.istockphoto.com/id/1442165858/photo/code-html-php-web-programming-source-code-abstract-code-background-programming-concept-3d.webp?b=1&s=170667a&w=0&k=20&c=WP4HecKz1rKv9rglv2SxSm3OYGRyV3A1uaLY5Q-oN0c='); */
+    /* background: url('https://t4.ftcdn.net/jpg/06/23/84/47/240_F_623844718_qQROX4fM1VL6ToEsJdHdbMUh964t15ik.jpg'); */
+    /* background: url('https://img.freepik.com/premium-photo/technology-background-design-by-using-digital-elements_221397-38.jpg'); */
+    /* background: url('https://www.google.com/search?q=ideal+background+technical+plain+image+in+blackish+blue+colour&tbm=isch&ved=2ahUKEwibid_Q0d6BAxXLbmwGHUk6BUsQ2-cCegQIABAA&oq=ideal+background+technical+plain+image+in+blackish+blue+colour&gs_lcp=CgNpbWcQAzoECCMQJ1CzA1iEDmCiEmgAcAB4AIAB5AKIAeUOkgEHMC4yLjIuM5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=soceZZvoL8vdseMPyfSU2AQ&bih=595&biw=1280&rlz=1C1CHBD_enIN1029IN1029'); */
+    /* background:url('img/download\ \(3\).jpeg') no-repeat center center /cover; */
+    /* background: url(''); */
+    /* opacity: 0.7; */
+}
+
+#home .box {
+    /* background: rgb(248, 243, 245); */
+    background: transparent;
+    width: 36rem;
+    height: 23rem;
+    margin: 6rem 5rem;
+    border: 1rem solid rgb(138, 7, 214);
+}
+
+
+#home .box .purple {
+    color: rgb(138, 7, 214);
+    font-size: 4.7rem;
+    text-shadow: 1px 1px 3px yellow;
+}
+
+
+#home .box .bx {
+    margin: 1.2rem 4rem;
+    width: 50rem;
+    font-size: 3.5rem;
+    text-align: justify;
+    /* margin-right: 10rem; */
+}
+
+
+#home .box .bx .para {
+    font-size: 1.1rem;
+}
+
+#home .box .bx .parag {
+    font-size: 2.5rem;
+}
+
+.social-links {
+    height: 7.4vh;
+}
+
+.social-links .fa-brands {
+    font-size: 1.7rem;
+    color: rgb(138, 7, 214);
+}
+
+/* .social-links .fa-brands .fa-instagram{
+   background-image: linear-gradient(top right ,#feda75, #fa7e1e, #D62976, #962FBF, #4F5BD5);
+} */
+
+
+.btn1 {
+    border-radius: 7rem;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    background: rgb(138, 7, 214);
+}
+
+.btn1:hover {
+    cursor: pointer;
+    background: rgb(146, 28, 214);
+}
+
+.btn1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn1 .fa-solid {
+    color: white;
+}
+
+#home .box1 {
+    /* background: rgb(248, 243, 245); */
+    background: transparent;
+    width: 30rem;
+    height: 28rem;
+    /* margin: 3rem 3rem; */
+    /* border: 1rem solid rgb(154, 153, 153); */
+}
+
+#home .box1 img {
+    width: 20rem;
+    margin: 0rem 5rem;
+    /* box-shadow: 1px 1px 5px gray; */
+}
+
+
+/* About   */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    width: 77rem;
+    height: 30rem;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+
+#about h2 {
+    font-size: 2rem;
+    color: rgb(138, 7, 214);
+    margin: 1.3rem auto;
+}
+
+#about .box {
+    box-shadow: 1px 1px 5px rgb(138, 7, 214);
+    width: 60rem;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2.7rem auto;
+}
+
+#about .box p {
+    color: purple;
+    margin: 2rem 2rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+/* CSS Animation for zoom-in from center */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to the specified class */
+.zoom-in {
+    animation: zoomIn 1s ease-in-out;
+    transform-origin: center;
+}
+
+
+
+/* Education section  */
+
+#education {
+    display: flex;
+    flex-direction: column;
+    width: 79rem;
+    height: 35rem;
+    justify-content: space-around;
+}
+
+
+
+#education h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(138, 7, 214);
+}
+
+#education .row {
+    width: 79rem;
+    height: 25rem;
+    /* margin: 1.5rem auto; */
+    /* justify-content: space-around; */
+    display: flex;
+
+}
+
+#education .row .box {
+    width: 30rem;
+    box-shadow: 1px 1px 5px rgb(138, 7, 214);
+    margin: 1rem 2rem;
+}
+
+#education .row .box img {
+    width: 7rem;
+    margin: 1.5rem 7.5rem;
+}
+
+#education .row .box h3 {
+    text-align: center;
+    text-shadow: 1px 1px 3px gray;
+    margin: 0.2rem 0rem;
+}
+
+#education .row .box h5 {
+    text-align: justify;
+    margin: 0.5rem 1.7rem;
+}
+
+#education .row .box .btn1 {
+    font-size: 0.8rem;
+    margin: 0.5rem 7.5rem;
+    border-radius: 4rem;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    background: rgb(138, 7, 214);
+}
+
+#education .row .box .btn1 a {
+    text-decoration: none;
+    color: white;
+    background: rgb(138, 7, 214);
+}
+
+#education .row .box .btn1:hover {
+    cursor: pointer;
+    background: rgb(140, 8, 233);
+}
+
+
+
+/* Internship  */
+
+#internship {
+    width: 47rem;
+    height: 35rem;
+    margin: 3.3rem 15rem 0rem 15rem
+}
+
+
+#internship h2 {
+    color: rgb(138, 7, 214);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+
+.container {
+    justify-content: center;
+    display: flex;
+    margin: 1.1rem;
+}
+
+
+.title,
+.title1 {
+    position: relative;
+    background-color: rgb(138, 7, 214);
+    color: white;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 1rem 4rem;
+    border: 1px solid #ccc;
+    margin: 0rem 2rem
+}
+
+.title::after,
+.title1::after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: 8px;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+}
+
+.title:hover::after,
+.title1:hover::after {
+    transform: scaleX(1);
+}
+
+
+.intbox {
+    border-radius: 7px;
+    display: none;
+    border: 1px solid firebrick;
+    width: 30rem;
+    height: 19rem;
+    padding: 20px;
+    margin: 1.7rem auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(187, 100, 237);
+    transition: 0.5s;
+}
+
+.intbox .info {
+    text-align: center;
+    margin: 1rem;
+}
+
+.intbox:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+
+.intbox img {
+    height: 5rem;
+    /* width: 4rem; */
+    margin: 1rem;
+}
+
+.intbox p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.btn1 {
+    background-color: rgb(138, 7, 214);
+    padding: 0.2rem 0.5rem;
+    border-radius: 7px;
+}
+
+.btn1 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Certificates */
+
+
+.certificates {
+    width: 79rem;
+    margin: 0rem rem;
+    z-index: 0;
+}
+
+.certificates h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(138, 7, 214);
+    margin-bottom: 0.8rem;
+}
+
+
+/* .img_box img {
+   
+} */
+
+
+.img_box {
+    width: 79rem;
+}
+
+
+
+.img_box img {
+    height: 90vh;
+    width: 30rem;
+    margin: 0vh 25rem;
+}
+
+.swiper-wrapper {
+    margin-bottom: 3rem;
+}
+
+.slider_container {
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+
+
+
+/* Skills */
+
+#skills {
+    width: 79rem;
+}
+
+.inner {
+    padding-top: 2rem;
+    background-color: rgb(240, 230, 250);
+}
+
+.header {
+    text-align: center;
+    /* font-size: 1.2rem; */
+    color: rgb(138, 7, 214);
+    padding: 1rem;
+    /* margin: 0rem auto; */
+    position: relative;
+    /* width: 8rem; */
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    transition-timing-function: ease-in-out;
+    height: 4px;
+    width: 10%;
+    transform: scaleX(0);
+    transition: 0.3s;
+    background-color: rgb(62, 21, 85);
+}
+
+.header:hover {
+    cursor: pointer;
+}
+
+.header:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    grid-gap: 1.8rem;
+    padding: 2rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    text-align: justify;
+}
+
+
+
+/* .skill-box:hover .img{
+    cursor: pointer;
+    transform:translateY(-1rem);
+} */
+
+
+.img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+
+.skill-title h3 {
+    margin-top: 0.5rem;
+}
+
+
+.skill-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 40%;
+    left: 30%;
+    background-color: rgb(147, 67, 216);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+    cursor: pointer;
+}
+
+
+.skill-title :hover {
+    cursor: pointer;
+}
+
+.skill-title:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+.img {
+    /* ()()(()()) */
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 55px;
+    background-color: rgb(223, 223, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    /* ()()()() */
+    height: 90px;
+    background: rgba(153, 150, 150, 0.5);
+    /* ()()()() 50 */
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-icon {
+    width: 50px;
+    z-index: 2;
+}
+
+
+/* .img img{
+    width:5rem;
+    height: 5rem;
+}
+
+
+.fa-brands{
+font-size: 5rem;
+} */
+
+
+
+/* Footer  */
+
+footer {
+    width: 79rem;
+    background-color: white;
+    color: white;
+}
+
+.footer {
+    background: rgb(138, 7, 214);
+    display: flex;
+    padding: 24px 30px;
+    justify-content: space-evenly;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.footer .footer-first h3 {
+    color: white;
+    margin: 2.4rem 0rem 0rem 0rem;
+    font-size: 2.5rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 0.5rem 0rem;
+    color: white;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-rights {
+    background: rgb(138, 7, 214);
+    text-align: center;
+    color: rgb(222, 208, 222);
+    padding: 15px;
+}
+
+
+.footer h4 {
+    font-size: 1.4em;
+}
+
+.footer-Second ul li a:hover {
+    color: rgb(233, 229, 229);
+}
+
+.footer-Fourth h4 {
+    padding: 0rem 1.9rem;
+}
+
+.footer-Fourth ul {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.footer-Fourth ul li {
+    margin: 1rem 1rem;
+    font-size: 2.5rem;
+}
+
+.footer-second,
+.footer-third,
+.footer-fourth {
+    margin: 1rem 0rem;
+}
+
+
+
+@media screen and (max-width:330px) {
+    header {
+        height: 7rem;
+        width: 81rem;
+        /* justify-content: space-around; */
+    }
+
+    #home {
+        width: 77.5rem;
+    }
+
+    #about {
+        width: 81rem;
+    }
+
+    #education {
+        width: 81.rem;
+    }
+
+    #certificates {
+        width: 77.5rem;
+    }
+
+    #skills {
+        width: 81rem;
+    }
+
+    footer {
+        width: 81.3rem;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-rights {
+        height: auto;
+    }
+
+
+    #home .box1 img {
+        width: 20rem;
+        margin: 0rem 3rem;
+    }
+
+
+    nav .left {
+        margin: 0rem 0rem 0rem 4rem;
+        height: 7rem;
+    }
+
+    nav .left h2 {
+        color: rgb(138, 7, 214);
+        font-size: 3rem;
+    }
+
+
+
+    nav .mid {
+        display: none;
+        position: absolute;
+        top: 7rem;
+        left: 0rem;
+        background-color: rgb(138, 7, 214);
+        height: 30rem;
+        /* width: auto; */
+        opacity: 0.835;
+    }
+
+
+    /* Add this style for the mobile view */
+    nav .mid.show {
+        display: flex;
+    }
+
+    nav .mid ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    nav .mid ul li {
+        text-align: center;
+        /* justify-content: center; */
+        padding: 2rem 33rem 1rem 34rem;
+        /* font-size: 6rem; */
+    }
+
+    nav .mid ul li a {
+        font-weight: bold;
+        font-size: 2.2rem;
+        color: white;
+    }
+
+    .bars {
+        color: rgb(138, 7, 214);
+        align-items: right;
+        margin: 2.6rem 0rem 3rem 3rem;
+        font-size: 2rem;
+        display: block;
+    }
+
+    .slide-in {
+        transform: translateY(-100%);
+        animation: slideInAnimation 0.2s ease-in-out forwards;
+      }
+      
+      @keyframes slideInAnimation {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+    /* Contact  */
+
+
+    .contact {
+        position: fixed;
+        top: 22.6vh;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+
+    .contact-visible {
+        opacity: 0.9888;
+        background-color: rgba(15, 34, 207, 0.3);
+        pointer-events: auto;
+    }
+
+
+
+    nav .right {
+        width: 2rem;
+        /* justify-content: space-around; */
+    }
+
+    nav .right .btn {
+        margin: 1.5rem 2rem;
+    }
+
+    nav .right .btn a {
+        font-size: 1.7rem;
+        padding: 0rem 0.8rem;
+    }
+
+
+    .slider {
+        top: 6.9rem;
+    }
+
+
+
+
+
+    /* Education  */
+
+    #education .row {
+        margin: 0rem 2.3rem;
+    }
+
+    education .row .box {
+        width: 22rem;
+        margin: 1rem 1.5rem;
+    }
+
+    /* Certificate  */
+    .swiper-button-prev {
+        padding-left: 1rem;
+    }
+
+    .swiper-button-next {
+        padding-right: 1rem;
+    }
+
+
+    .img_box img {
+        height: 74vh;
+        width: 33rem;
+        margin: 0vh 22rem
+    }
+
+}
